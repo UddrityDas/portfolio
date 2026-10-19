@@ -1,6 +1,6 @@
 
 import { motion } from 'framer-motion';
-import { ArrowRight, Code, Database, Layout } from 'lucide-react';
+import { ArrowRight, Code, Database, Layout, PartyPopper } from 'lucide-react';
 
 const Hero = () => {
     return (
@@ -29,6 +29,17 @@ const Hero = () => {
                     </p>
 
                     <div className="flex flex-wrap gap-4">
+                        <motion.a
+                            href="/my-birthday-wishes/2026"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            animate={{ scale: [1, 1.045, 1] }}
+                            transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut" }}
+                            className="px-8 py-3 bg-gradient-to-r from-pink-400 via-rose-300 to-amber-200 text-black font-semibold rounded-full shadow-[0_0_28px_rgba(244,114,182,0.65)] hover:shadow-[0_0_40px_rgba(251,191,36,0.85)] transition-shadow flex items-center gap-2"
+                        >
+                            <PartyPopper size={20} />
+                            Happy Birthday
+                        </motion.a>
                         <a
                             href="#projects"
                             className="px-8 py-3 bg-white text-black font-semibold rounded-full hover:bg-gray-200 transition-colors flex items-center gap-2"

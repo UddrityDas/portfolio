@@ -1,0 +1,17 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/my-birthday-wishes/2026",
+      "destination": "https://happy-birthday-psi-sage.vercel.app/my-birthday-wishes/2026"
+    },
+    {
+      "source": "/my-birthday-wishes/2026/",
+      "destination": "https://happy-birthday-psi-sage.vercel.app/my-birthday-wishes/2026/"
+    },
+    {
+      "source": "/my-birthday-wishes/2026/:path*",
+      "destination": "https://happy-birthday-psi-sage.vercel.app/my-birthday-wishes/2026/:path*"
+    }
+  ]
+}
